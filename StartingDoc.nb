@@ -1,0 +1,540 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17632,        532]
+NotebookOptionsPosition[     15876,        499]
+NotebookOutlinePosition[     16376,        517]
+CellTagsIndexPosition[     16333,        514]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"values", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"Inactive", "[", "Sin", "]"}], "[", "\[Theta]", "]"}], "==", 
+        RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Inactive", "[", "Cos", "]"}], "[", "\[Theta]", "]"}], "==", 
+        RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Inactive", "[", "Tan", "]"}], "[", "\[Theta]", "]"}], "==", 
+        RowBox[{"Tan", "[", "\[Theta]", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]", ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         FractionBox["\[Pi]", "6"], ",", " ", 
+         FractionBox["\[Pi]", "4"], ",", 
+         FractionBox["\[Pi]", "3"], ",", 
+         FractionBox["\[Pi]", "2"]}], "}"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Item", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{"#", ",", 
+             RowBox[{"FontSize", "->", "Larger"}]}], "]"}], ",", 
+           RowBox[{"Background", "->", 
+            RowBox[{"GrayLevel", "[", "0.9", "]"}]}]}], "]"}], "&"}], "/@", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Sin", "[", "\[Theta]", "]"}], ",", 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}], ",", 
+          RowBox[{"Tan", "[", "\[Theta]", "]"}]}], "}"}]}], "}"}], ",", 
+      RowBox[{"values", "/.", " ", 
+       RowBox[{"ComplexInfinity", "->", "Infinity"}]}]}], "]"}], ",", 
+    RowBox[{"Dividers", "->", "All"}], ",", 
+    RowBox[{"Alignment", "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<\[LongEqual]\>\"", ",", "Center"}], "}"}]}]}], "]"}], "//",
+   "TraditionalForm"}]}], "Input",
+ CellChangeTimes->{{3.926984656625873*^9, 3.9269846842342896`*^9}, 
+   3.926985075123678*^9},
+ CellLabel->"In[32]:=",ExpressionUUID->"3da77ff6-71eb-416e-8202-86ef99d3f49c"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[GridBox[{
+     {
+      ItemBox[
+       StyleBox[
+        RowBox[{"sin", "(", "\[Theta]", ")"}],
+        StripOnInput->False,
+        FontSize->Larger],
+       Background->GrayLevel[0.9],
+       StripOnInput->False], 
+      ItemBox[
+       StyleBox[
+        RowBox[{"cos", "(", "\[Theta]", ")"}],
+        StripOnInput->False,
+        FontSize->Larger],
+       Background->GrayLevel[0.9],
+       StripOnInput->False], 
+      ItemBox[
+       StyleBox[
+        RowBox[{"tan", "(", "\[Theta]", ")"}],
+        StripOnInput->False,
+        FontSize->Larger],
+       Background->GrayLevel[0.9],
+       StripOnInput->False]},
+     {
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"sin"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Sin]"], "(", "0", ")"}], "\[LongEqual]", "0"}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"cos"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Cos]"], "(", "0", ")"}], "\[LongEqual]", "1"}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"tan"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Tan]"], "(", "0", ")"}], "\[LongEqual]", "0"}]},
+     {
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"sin"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Sin]"], "(", 
+        FractionBox["\[Pi]", "6"], ")"}], "\[LongEqual]", 
+       FractionBox["1", "2"]}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"cos"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Cos]"], "(", 
+        FractionBox["\[Pi]", "6"], ")"}], "\[LongEqual]", 
+       FractionBox[
+        SqrtBox["3"], "2"]}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"tan"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Tan]"], "(", 
+        FractionBox["\[Pi]", "6"], ")"}], "\[LongEqual]", 
+       FractionBox["1", 
+        SqrtBox["3"]]}]},
+     {
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"sin"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Sin]"], "(", 
+        FractionBox["\[Pi]", "4"], ")"}], "\[LongEqual]", 
+       FractionBox["1", 
+        SqrtBox["2"]]}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"cos"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Cos]"], "(", 
+        FractionBox["\[Pi]", "4"], ")"}], "\[LongEqual]", 
+       FractionBox["1", 
+        SqrtBox["2"]]}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"tan"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Tan]"], "(", 
+        FractionBox["\[Pi]", "4"], ")"}], "\[LongEqual]", "1"}]},
+     {
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"sin"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Sin]"], "(", 
+        FractionBox["\[Pi]", "3"], ")"}], "\[LongEqual]", 
+       FractionBox[
+        SqrtBox["3"], "2"]}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"cos"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Cos]"], "(", 
+        FractionBox["\[Pi]", "3"], ")"}], "\[LongEqual]", 
+       FractionBox["1", "2"]}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"tan"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Tan]"], "(", 
+        FractionBox["\[Pi]", "3"], ")"}], "\[LongEqual]", 
+       SqrtBox["3"]}]},
+     {
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"sin"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Sin]"], "(", 
+        FractionBox["\[Pi]", "2"], ")"}], "\[LongEqual]", "1"}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"cos"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Cos]"], "(", 
+        FractionBox["\[Pi]", "2"], ")"}], "\[LongEqual]", "0"}], 
+      RowBox[{
+       RowBox[{
+        TemplateBox[{"tan"},
+         "InactiveHead",
+         BaseStyle->"InactiveTraditional",
+         InterpretationFunction->None,
+         SyntaxForm->"Symbol",
+         Tooltip->"Inactive[Tan]"], "(", 
+        FractionBox["\[Pi]", "2"], ")"}], "\[LongEqual]", "\[Infinity]"}]}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{"\[LongEqual]"}}, "Rows" -> {{Center}}},
+    GridBoxDividers->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], TraditionalForm]], "Output",
+ CellChangeTimes->{3.926985076154855*^9, 3.926985401005987*^9},
+ CellLabel->
+  "Out[33]//TraditionalForm=",ExpressionUUID->"01b03820-40b0-4d93-9ef5-\
+8d809ff8bf5b"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellLabel->"In[34]:=",ExpressionUUID->"9fa5af84-db0a-4a8a-ae91-766c406666d0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TangentLine", "[", 
+   RowBox[{"eqn_", ",", "a_"}], "]"}], ":=", 
+  RowBox[{"Expand", "[", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"y", "-", 
+       RowBox[{"(", 
+        RowBox[{"eqn", "/.", 
+         RowBox[{"x", "\[Rule]", "a"}]}], ")"}]}], "\[Equal]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"D", "[", 
+          RowBox[{"eqn", ",", "x"}], "]"}], "/.", 
+         RowBox[{"x", "\[Rule]", "a"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"x", "-", "a"}], ")"}]}]}], ",", "y"}], "]"}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[35]:=",ExpressionUUID->"b2fdd9dc-1ee7-4f4c-8eac-b6a09e13c7e0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NormalLine", "[", 
+   RowBox[{"eqn_", ",", "a_"}], "]"}], ":=", 
+  RowBox[{"Expand", "[", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"y", "-", 
+       RowBox[{"(", 
+        RowBox[{"eqn", "/.", 
+         RowBox[{"x", "\[Rule]", "a"}]}], ")"}]}], "\[Equal]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"D", "[", 
+           RowBox[{"eqn", ",", "x"}], "]"}]}], "/.", 
+         RowBox[{"x", "\[Rule]", "a"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"x", "-", "a"}], ")"}]}]}], ",", "y"}], "]"}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[36]:=",ExpressionUUID->"494f0a90-24a8-444e-8841-847d594b85e5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"compsq", "[", 
+   RowBox[{"a_", ",", "b_", ",", "c_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"x", "+", 
+        FractionBox["b", 
+         RowBox[{"2", "a"}]]}], ")"}], "2"]}], "+", "c", "-", 
+    FractionBox[
+     SuperscriptBox["b", "2"], 
+     RowBox[{"4", "a"}]]}], "//", "TraditionalForm"}]}]], "Input",
+ CellLabel->"In[37]:=",ExpressionUUID->"cca83ab1-5a6c-4db2-94bf-ba3e3348c1e6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Newton", "[", 
+   RowBox[{"eqn_", ",", "var_", ",", "x_"}], "]"}], ":=", 
+  RowBox[{"x", "-", 
+   FractionBox[
+    RowBox[{"eqn", "/.", 
+     RowBox[{"var", "->", "x"}]}], 
+    RowBox[{
+     RowBox[{"D", "[", 
+      RowBox[{"eqn", ",", "var"}], "]"}], "/.", 
+     RowBox[{"var", "->", "x"}]}]]}]}]], "Input",
+ CellLabel->"In[38]:=",ExpressionUUID->"ac14ee22-0383-415c-a096-78bdc94798d2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PlotDerivative", "[", 
+   RowBox[{"func_", ",", 
+    RowBox[{"{", 
+     RowBox[{"x_", ",", "xmin_", ",", "xmax_"}], "}"}]}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "df", "}"}], ",", 
+    RowBox[{
+     RowBox[{"df", "=", 
+      RowBox[{"D", "[", 
+       RowBox[{"func", ",", "x"}], "]"}]}], ";", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"func", ",", "df"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "xmin", ",", "xmax"}], "}"}], ",", 
+       RowBox[{"PlotLegends", "->", 
+        RowBox[{"{", 
+         RowBox[{"\"\<Function\>\"", ",", "\"\<Derivative\>\""}], "}"}]}], 
+       ",", 
+       RowBox[{"AxesLabel", "->", 
+        RowBox[{"{", 
+         RowBox[{"\"\<x\>\"", ",", "\"\<y\>\""}], "}"}]}], ",", 
+       RowBox[{"PlotStyle", "->", 
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", "Red"}], "}"}]}]}], "]"}]}]}], "]"}]}]], "Input",
+ CellLabel->"In[39]:=",ExpressionUUID->"4465f806-894d-41c3-85cd-ffb7f8bf3cb3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"P", "[", 
+   RowBox[{"eqn_", ",", 
+    RowBox[{"{", 
+     RowBox[{"x_", ",", "max_", ",", "min_"}], "}"}]}], "]"}], ":=", 
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{"{", "eqn", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "min", ",", "max"}], "}"}], ",", 
+    RowBox[{"PlotRange", "->", 
+     RowBox[{"{", 
+      RowBox[{"min", ",", "max"}], "}"}]}], ",", 
+    RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", "\"\<Expressions\>\""}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[40]:=",ExpressionUUID->"10ee1593-e5b8-4ccb-8b95-39709fa9a3b6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"z", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   SuperscriptBox["x", "3"], "-", 
+   RowBox[{"11", 
+    SuperscriptBox["x", "2"]}], "+", 
+   RowBox[{"24", "x"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"z", "'"}], "[", "x", "]"}], "==", "0"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"TableForm", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{
+       RowBox[{"z", "'"}], "[", "x", "]"}]}], "}"}], "/.", 
+    RowBox[{"x", "->", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       FractionBox["4", "3"], ",", "2"}], "}"}]}]}], ",", 
+   RowBox[{"TableHeadings", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<x\>\"", ",", "\"\<z'(x)\>\""}], "}"}], ",", "None"}], 
+     "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9269851883864393`*^9, 3.926985200324746*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"f46f6cf4-709c-4e4a-99f6-f0d161a54ef2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     FractionBox["4", "3"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "6"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.926985417586522*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"c1a673fb-1185-4cc5-a817-5849e32d4ac0"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["\<\"x\"\>",
+       HoldForm], "1", 
+      FractionBox["4", "3"], "2"},
+     {
+      TagBox["\<\"z'(x)\"\>",
+       HoldForm], "5", "0", 
+      RowBox[{"-", "8"}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{
+     "Columns" -> {False, True, {False}, False}, "Rows" -> {{False}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   {OutputFormsDump`HeadedRows, None}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$, TableHeadings -> {{"x", "z'(x)"}, None}]]]], "Output",
+ CellChangeTimes->{3.9269854176203737`*^9},
+ CellLabel->
+  "Out[43]//TableForm=",ExpressionUUID->"434c5e49-cbff-4c78-aea0-\
+9fd28aadb375"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DI", "[", 
+   RowBox[{"func_", ",", 
+    RowBox[{"{", 
+     RowBox[{"x_", ",", "min_", ",", "max_"}], "}"}]}], "]"}], ":=", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{"func", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "min", ",", "max"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.932009823744364*^9, 3.9320099014533997`*^9}},
+ CellLabel->"In[67]:=",ExpressionUUID->"309cff97-a1ce-4c6c-82f6-f710696c4c2b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"II", "[", 
+   RowBox[{"func_", ",", "x_"}], "]"}], ":=", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{"func", ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9320099407041664`*^9, 3.9320099731019626`*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"60ab5b82-7b5b-4982-b33a-5dde93c8b412"]
+},
+WindowSize->{949, 467},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>1.3 Inherited,
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"b81a9b24-2d76-4fb0-b2ba-c07ea3a45be7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2092, 56, 207, "Input",ExpressionUUID->"3da77ff6-71eb-416e-8202-86ef99d3f49c"],
+Cell[2675, 80, 5937, 184, 242, "Output",ExpressionUUID->"01b03820-40b0-4d93-9ef5-8d809ff8bf5b"]
+}, Open  ]],
+Cell[8627, 267, 155, 2, 50, "Input",ExpressionUUID->"9fa5af84-db0a-4a8a-ae91-766c406666d0"],
+Cell[8785, 271, 687, 21, 50, "Input",ExpressionUUID->"b2fdd9dc-1ee7-4f4c-8eac-b6a09e13c7e0"],
+Cell[9475, 294, 744, 23, 76, "Input",ExpressionUUID->"494f0a90-24a8-444e-8841-847d594b85e5"],
+Cell[10222, 319, 496, 15, 76, "Input",ExpressionUUID->"cca83ab1-5a6c-4db2-94bf-ba3e3348c1e6"],
+Cell[10721, 336, 422, 12, 76, "Input",ExpressionUUID->"ac14ee22-0383-415c-a096-78bdc94798d2"],
+Cell[11146, 350, 1042, 29, 101, "Input",ExpressionUUID->"4465f806-894d-41c3-85cd-ffb7f8bf3cb3"],
+Cell[12191, 381, 624, 17, 101, "Input",ExpressionUUID->"10ee1593-e5b8-4ccb-8b95-39709fa9a3b6"],
+Cell[CellGroupData[{
+Cell[12840, 402, 991, 31, 124, "Input",ExpressionUUID->"f46f6cf4-709c-4e4a-99f6-f0d161a54ef2"],
+Cell[13834, 435, 328, 9, 68, "Output",ExpressionUUID->"c1a673fb-1185-4cc5-a817-5849e32d4ac0"],
+Cell[14165, 446, 919, 28, 96, "Output",ExpressionUUID->"434c5e49-cbff-4c78-aea0-9fd28aadb375"]
+}, Open  ]],
+Cell[15099, 477, 450, 11, 50, "Input",ExpressionUUID->"309cff97-a1ce-4c6c-82f6-f710696c4c2b"],
+Cell[15552, 490, 320, 7, 50, "Input",ExpressionUUID->"60ab5b82-7b5b-4982-b33a-5dde93c8b412"]
+}
+]
+*)
+
