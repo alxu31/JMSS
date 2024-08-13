@@ -1,0 +1,10 @@
+* text=auto
+*.py text diff=python
+*.docx binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.pptx binary
+*.db binary
+*.docx merge=ours
+*.sql linguist-detectable=true
