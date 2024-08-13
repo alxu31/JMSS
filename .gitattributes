@@ -8,3 +8,4 @@
 *.db binary
 *.docx merge=ours
 *.sql linguist-detectable=true
+*.sql linguist-language=sql
