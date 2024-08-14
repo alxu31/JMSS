@@ -7,5 +7,5 @@
 *.pptx binary
 *.db binary
 *.docx merge=ours
-JMSS/Y11/Computing/HW\ Task\ Database/*.sql linguist-detectable=true
-JMSS/Y11/Computing/HW\ Task\ Database/*.sql linguist-language=sql
+Y11/Computing/HW\ Task\ Database/*.sql linguist-detectable=true linguist-vendored=false
+Y11/Computing/HW\ Task\ Database/*.sql linguist-language=sql
