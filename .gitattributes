@@ -7,5 +7,6 @@
 *.pptx binary
 *.db binary
 *.docx merge=ours
+Y11/MCP/Project\ 1/*.m linguist-language=Matlab
 Y11/Computing/HW\ Task\ Database/*.sql linguist-detectable=true linguist-vendored=false
 Y11/Computing/HW\ Task\ Database/*.sql linguist-language=sql
