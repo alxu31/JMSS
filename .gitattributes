@@ -12,7 +12,9 @@ Y11/Mathematical\ Methods/Integration.nb linguist-detectable=false
 Y11/Mathematical\ Methods/Discrete\ Random\ Variables.nb linguist-detectable=false
 Y11/Mathematical\ Methods/Binomial\ Distribution.nb linguist-detectable=false
 Y11/Mathematical\ Methods/Continuous\ Random\ Variables.nb linguist-detectable=false
+Y11/Mathematical\ Methods/Newtons\ Method.nb linguist-detectable=false
+Y11/Mathematical\ Methods/Bisection\ Method.nb linguist-detectable=false
 
-Y11/MCP/Project\ 1/*.m linguist-language=Matlab
+
 Y11/Computing/HW\ Task\ Database/*.sql linguist-detectable=true linguist-vendored=false
 Y11/Computing/HW\ Task\ Database/*.sql linguist-language=sql
