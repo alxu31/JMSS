@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    928615,      19525]
-NotebookOptionsPosition[    866979,      18503]
-NotebookOutlinePosition[    867524,      18522]
-CellTagsIndexPosition[    867481,      18519]
+NotebookDataLength[    929244,      19537]
+NotebookOptionsPosition[    867611,      18515]
+NotebookOutlinePosition[    868153,      18534]
+CellTagsIndexPosition[    868110,      18531]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -17519,7 +17519,7 @@ Cell[BoxData[
   3.9319374362953005`*^9}},ExpressionUUID->"d7608195-faea-4939-b59a-\
 d7af835ab801"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -18004,7 +18004,7 @@ ec4caaffe258"],
 Cell[TextData[{
  "1. READ THE QUESTION CAREFULLY\n2. Exact values unless specified otherwise\n\
 3. Round to the specified amount of significant figures\n4. Remember to add \
-UNITS even for period etc\n5. Show your work\n6. Use sentences when needed \
+UNITS even for period etc\n5. SHOW your work\n6. Use sentences when needed \
 (e.g. \[Therefore] the number of chickens is 5)\n7. Switch inequality signs \
 when divide or multiply by a negative number\n8. Some answers have \
 restrictions (graphs and values)\n9. Diameter and Radius are different (they \
@@ -18047,7 +18047,9 @@ swap\n14. Use the quadratic formula when dealing with bad values: ",
 \n16. Inside of logs cannot be >= 0, so when you find solutions, check they \
 work\n17. Simplify expressions\n18. May need to use , Reals and //N in logs \
 and exponents\n19. SYNTAX e.g. integral dx and +C\n20. FindInstance, FindRoot \
-when solve doesnt work\n\nFull Function Notation: f: ",
+when solve doesnt work\n21. In integration, when finding area unit = y ax \
+units * x ax units (e.g. v(m/s) vs t(s): area = m)\n22. >= NOT SAME AS > \
+(especially in discrete probability)\n\nFull Function Notation: f: ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -18060,7 +18062,14 @@ when solve doesnt work\n\nFull Function Notation: f: ",
      RowBox[{
       SuperscriptBox["x", "2"], "+"}]}]}], TraditionalForm]],ExpressionUUID->
   "3f717d14-b75b-4a9f-b126-2715d2ed4201"],
- "2x+1\ncodomain is always R in methods"
+ "2x+1\ncodomain is always R in methods\nPercentage error: |",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"observed", "-", "expected"}], "expected"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "29303aa7-ed54-4164-bb71-b9b9ee217b4a"],
+ "|*100%"
 }], "Text",
  CellChangeTimes->{{3.892104635183339*^9, 3.8921046397609525`*^9}, {
    3.8921048788153343`*^9, 3.892104923935723*^9}, {3.8921055392933736`*^9, 
@@ -18077,7 +18086,10 @@ when solve doesnt work\n\nFull Function Notation: f: ",
    3.9234627380008435`*^9, 3.9234627614661074`*^9}, {3.9269846601643763`*^9, 
    3.9269846618460646`*^9}, {3.927838206783329*^9, 3.9278382150990677`*^9}, {
    3.9319370412645645`*^9, 3.9319370741406703`*^9}, {3.932006219046109*^9, 
-   3.932006224783272*^9}},ExpressionUUID->"88dfd089-e917-4e11-8c62-\
+   3.932006224783272*^9}, {3.9338866169084854`*^9, 3.933886666525284*^9}, {
+   3.934941637290267*^9, 3.934941658258746*^9}, {3.9349417067217507`*^9, 
+   3.9349417070811863`*^9}, 3.934941806981037*^9, {3.9349483536158624`*^9, 
+   3.9349483949608636`*^9}},ExpressionUUID->"88dfd089-e917-4e11-8c62-\
 31a8bdf98839"],
 
 Cell[CellGroupData[{
@@ -18501,7 +18513,7 @@ Cell[BoxData[{
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{949., 472.5},
+WindowSize->{949, 467},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules-><|"TryRealOnly" -> False|>,
 Magnification:>1.2 Inherited,
@@ -19475,9 +19487,9 @@ Cell[828540, 17488, 433, 13, 77, "Input",ExpressionUUID->"6a9fd571-6b5f-4523-9e0
 Cell[828976, 17503, 156, 3, 39, "Text",ExpressionUUID->"0a9724ba-54c2-4ac5-a3ee-bb6ffbad8ada"],
 Cell[829135, 17508, 362, 11, 67, "Input",ExpressionUUID->"d7608195-faea-4939-b59a-d7af835ab801"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[829546, 17525, 164, 3, 83, "Section",ExpressionUUID->"4ce47866-355d-4f18-b6cb-04dc5a3961c5"],
+Cell[829546, 17525, 164, 3, 66, "Section",ExpressionUUID->"4ce47866-355d-4f18-b6cb-04dc5a3961c5"],
 Cell[CellGroupData[{
 Cell[829735, 17532, 167, 3, 40, "Subsection",ExpressionUUID->"69afad34-eece-4318-b1af-35b67f17c417"],
 Cell[829905, 17537, 373, 12, 44, "Text",ExpressionUUID->"c24ce7fc-e6c4-4404-8305-512fc0a659e5"],
@@ -19509,21 +19521,21 @@ Cell[849299, 17986, 203, 3, 46, "Output",ExpressionUUID->"af038e62-8411-468e-8af
 }, Closed]],
 Cell[CellGroupData[{
 Cell[849551, 17995, 364, 6, 66, "Section",ExpressionUUID->"8e946f0c-4a99-43df-9caf-ec4caaffe258"],
-Cell[849918, 18003, 3747, 77, 698, "Text",ExpressionUUID->"88dfd089-e917-4e11-8c62-31a8bdf98839"],
+Cell[849918, 18003, 4379, 89, 787, "Text",ExpressionUUID->"88dfd089-e917-4e11-8c62-31a8bdf98839"],
 Cell[CellGroupData[{
-Cell[853690, 18084, 160, 3, 40, "Subsection",ExpressionUUID->"2349c7cc-d807-4570-9dd8-1d7d32ea5206"],
+Cell[854322, 18096, 160, 3, 40, "Subsection",ExpressionUUID->"2349c7cc-d807-4570-9dd8-1d7d32ea5206"],
 Cell[CellGroupData[{
-Cell[853875, 18091, 2092, 56, 192, "Input",ExpressionUUID->"2a45c67a-4c7a-4620-9b44-9facbb1e60b7"],
-Cell[855970, 18149, 5915, 184, 226, "Output",ExpressionUUID->"6e345b95-faeb-4dbc-984f-8ab50bb6d11a"]
+Cell[854507, 18103, 2092, 56, 192, "Input",ExpressionUUID->"2a45c67a-4c7a-4620-9b44-9facbb1e60b7"],
+Cell[856602, 18161, 5915, 184, 226, "Output",ExpressionUUID->"6e345b95-faeb-4dbc-984f-8ab50bb6d11a"]
 }, Open  ]],
-Cell[861900, 18336, 147, 2, 47, "Input",ExpressionUUID->"900c8458-a4ba-4cc4-b18e-42da0fb1ad4e"],
-Cell[862050, 18340, 663, 20, 48, "Input",ExpressionUUID->"0c3983e4-9847-45e3-a1bc-5cc93cb3aee5"],
-Cell[862716, 18362, 720, 22, 48, "Input",ExpressionUUID->"06b8f74e-0d7f-427e-8563-76eca513743f"],
-Cell[863439, 18386, 474, 15, 71, "Input",ExpressionUUID->"832e49a7-e751-4d83-a458-a54c02122c60"],
-Cell[863916, 18403, 422, 12, 69, "Input",ExpressionUUID->"340a0248-090b-4a62-8ee2-20a9ee4eb027"],
-Cell[864341, 18417, 1020, 29, 94, "Input",ExpressionUUID->"2ff878ae-46eb-4830-9aba-8987da345e8a"],
-Cell[865364, 18448, 600, 16, 71, "Input",ExpressionUUID->"1d12a3bb-2c8d-4862-8d85-6481ffffe226"],
-Cell[865967, 18466, 972, 32, 116, "Input",ExpressionUUID->"c9beda45-734e-4161-8c7a-19a899f60b27"]
+Cell[862532, 18348, 147, 2, 47, "Input",ExpressionUUID->"900c8458-a4ba-4cc4-b18e-42da0fb1ad4e"],
+Cell[862682, 18352, 663, 20, 48, "Input",ExpressionUUID->"0c3983e4-9847-45e3-a1bc-5cc93cb3aee5"],
+Cell[863348, 18374, 720, 22, 48, "Input",ExpressionUUID->"06b8f74e-0d7f-427e-8563-76eca513743f"],
+Cell[864071, 18398, 474, 15, 71, "Input",ExpressionUUID->"832e49a7-e751-4d83-a458-a54c02122c60"],
+Cell[864548, 18415, 422, 12, 69, "Input",ExpressionUUID->"340a0248-090b-4a62-8ee2-20a9ee4eb027"],
+Cell[864973, 18429, 1020, 29, 94, "Input",ExpressionUUID->"2ff878ae-46eb-4830-9aba-8987da345e8a"],
+Cell[865996, 18460, 600, 16, 71, "Input",ExpressionUUID->"1d12a3bb-2c8d-4862-8d85-6481ffffe226"],
+Cell[866599, 18478, 972, 32, 116, "Input",ExpressionUUID->"c9beda45-734e-4161-8c7a-19a899f60b27"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]]
