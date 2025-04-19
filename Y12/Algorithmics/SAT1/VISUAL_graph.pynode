@@ -1,0 +1,149 @@
+﻿
+# loc - name, clas - size, c_eff - col, pos - rel pos
+def cn(loc,clas,c_eff,pos)->object:
+    efficiencyColour = {
+        0:Color.RED,
+        1:Color(255, 165, 0),
+        2:Color.YELLOW,
+        3:Color.GREEN
+    }
+    # Location -> Label
+    n = Node(loc)
+    # Classification -> Node size
+    if clas == "Urban":
+        n.set_size(size=20)
+    elif clas == "Suburban":
+        n.set_size(size=15)
+    else:
+        n.set_size(size=10)
+    # Charger efficiency -> Node colour
+    n.set_color(color=efficiencyColour[c_eff])
+    graph.add_node(n)
+    # Set position
+    n.set_position(pos[0],pos[1],relative=True)
+    return n
+
+# locs, params
+def ce(locs,params)->object:
+    l1, l2 = locs[0], locs[1]
+    dist, rou, spe = params[0], params[1], params[2]
+    roughnessWidth = {
+        0:1,
+        1:4,
+        2:7
+    }
+    # 40-100km/h
+    
+    # yellow=60
+    # orange=70
+    # salmon=80
+    # magenta=90
+    # blue=100
+    speedColour = {
+        60:Color(243,231,155),
+        70:Color(250,178,127),
+        80:Color(235,127,134),
+        90:Color(185,94,154),
+        100:Color(92,83,165)
+    }
+    
+    # Distance -> Weight
+    e = Edge(nodes[l1], nodes[l2], dist)
+    # Speed limit -> Colour
+    e.set_color(color=speedColour[spe])
+    # Roughness -> Width
+    e.set_width(width=roughnessWidth[rou])
+    graph.add_edge(e)
+    return e
+    
+
+
+# CHARGER EFF: 0=0,1=7,2=12,3=20
+# chargerEff = {
+#     0:0,
+#     1:7,
+#     2:12,
+#     3:20
+# }
+
+# loc: [class,charger eff,rel pos]
+locInfo = {
+    "Adelaide": ["Urban",3,(0.5228,0.4839)],
+    "Gawler": ["Suburban",2,(0.5496,0.4257)],
+    "Murray Bridge": ["Suburban",2,(0.6434,0.5201)],
+    "Victor Harbor": ["Rural",1,(0.5282,0.5884)],
+    "Port Pirie": ["Rural",1,(0.4155,0.1948)],
+    "Whyalla": ["Urban",2,(0.3378,0.1727)],
+    "Port Augusta": ["Urban",1,(0.3700,0.0823)],
+    "Kadina": ["Rural",1,(0.3619,0.3233)],
+    "Peterborough": ["Rural",0,(0.5684,0.1606)],
+    "Kimba": ["Rural",0,(0.0858,0.1727)],
+    "Mount Gambier": ["Urban",2,(0.9223,0.9779)],
+    "Renmark": ["Rural",0,(0.9169,0.3594)],
+    "Naracoorte": ["Rural",0,(0.9142,0.8273)],
+    "Kingston SE": ["Rural",0,(0.7534,0.8092)]
+}
+
+
+
+nodes = {}
+for i,j in locInfo.items():
+    cl, ch, pos = j[0], j[1], j[2]
+    nodes[i] = cn(i,cl,ch,pos)
+    
+# [loc1, loc2]:[dist,roughness,speedlim]
+roadInfo = {
+    ("Adelaide","Gawler"):[44,0,100],
+    ("Adelaide","Murray Bridge"):[76,0,90],
+    ("Adelaide","Victor Harbor"):[83,0,70],
+    ("Adelaide","Port Pirie"):[223,1,80],
+    ("Adelaide","Renmark"):[257,1,100],
+    
+    ("Gawler","Kadina"):[132,1,80],
+    ("Gawler","Port Pirie"):[198,1,70],
+    ("Gawler","Murray Bridge"):[97,0,100],
+
+    ("Murray Bridge","Victor Harbor"):[71,0,90],
+    ("Murray Bridge","Renmark"):[204,1,70],
+    ("Murray Bridge","Naracoorte"):[193,1,60],
+
+    ("Port Pirie","Kadina"):[103,0,90],
+    ("Port Pirie","Whyalla"):[91,0,60],
+    ("Port Pirie","Port Augusta"):[93,0,100],
+    ("Port Pirie","Peterborough"):[114,1,80],
+
+    ("Port Augusta","Whyalla"):[76,0,70],
+    ("Port Augusta","Kimba"):[156,1,100],
+    ("Port Augusta","Renmark"):[295,2,90],
+
+    ("Whyalla","Kimba"):[130,1,80],
+    ("Whyalla","Peterborough"):[227,1,100],
+
+    ("Mount Gambier","Naracoorte"):[98,1,70],
+    ("Mount Gambier","Kingston SE"):[163,1,90],
+
+    ("Renmark","Naracoorte"):[289,2,60],
+    ("Renmark","Kingston SE"):[270,2,100],
+
+    ("Kingston SE","Victor Harbor"):[238,2,70],
+    ("Kingston SE","Murray Bridge"):[186,1,90],
+
+    ("Peterborough","Kadina"):[190,1,80],
+    ("Peterborough","Renmark"):[265,1,100]
+}
+
+edges = {}
+for i, j in roadInfo.items():
+    edges[i] = ce(i, j)
+    
+# pynode_core.add_event(pynode_core.Event(pynode_core.js_set_spread, [500]))
+
+    
+
+
+
+
+
+
+
+
